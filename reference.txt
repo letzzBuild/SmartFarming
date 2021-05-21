@@ -1,0 +1,21 @@
+---------mysql db installation procedure on raspberry pi-----------
+step 1 .  sudo apt update
+          sudo apt upgrade
+
+step 2 . sudo apt install mariadb-server
+         hit enter for password asked and leave password blank.
+         answer y or no as per requirements
+
+step 3 . sudo mysql -u root -p
+         you wil be logged into mariabdb shell
+         quit; to quit mariadb shell
+
+         USEFUL DATABASE COMMANDS 
+         1.CREATE DATABASE exampledb;
+         2.CREATE USER 'exampleuser'@'localhost' IDENTIFIED BY 'pimylifeup';
+         3.GRANT ALL PRIVILEGES ON exampledb.* TO 'exampleuser'@'localhost';
+         4.FLUSH PRIVILEGES;          saves the user 
+
+
+
+-----------install a python driver for mysql so that u can access the mysql db using python 
